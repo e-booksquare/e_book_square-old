@@ -1,0 +1,112 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: black;
+}
+
+body{
+    overflow-x: hidden;
+}
+.estilo_fundo_header_folha{
+    background-color: rgb(102 115 231);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+.container_header_folha{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 450px;
+}
+.header_folha{
+    z-index: 1;
+    background-color: rgba(102, 115, 231, 0.329);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 2px solid rgb(43, 6, 255);
+}
+.container_sobre_historia{
+    display: flex;
+    align-items: center;
+    height: 450px;
+    max-width: 600px;
+}
+.ajustar_alinhamento{
+    display: flex;
+}
+.img{
+    height: 400px;
+    width: 260px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.img img{
+    max-height: 390px;
+    min-height: 390px;
+    min-width: 250px;
+    max-width: 250px;
+    border-radius: 5px;
+}
+.informacoes_obra{
+    margin-left: 10px;
+}
+.informacoes_obra p{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.alterar_estilo_texto{
+    font-size: 14pt;
+    font-weight: 700;
+}
+.Titulo_entrada{
+    display: flex;
+    justify-content: center;
+}
+.folha{
+margin: 50px;
+}
+
+textarea{
+    padding-top: 50px;
+}
+
+.botoes{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.botoes button{
+    padding: 10px;
+    margin: 3px;
+    background-color: #d40743;
+    color: white;
+    font-size: 12pt;
+    border-radius: 5px;
+    border: none;
+}
+
+.botoes button:hover{
+    filter: brightness(0.6);
+    cursor: pointer;
+}
+
+.titulo_historias{
+    text-align: center;
+    font-size: 25pt;
+    border: none;
+    font-weight: 600;
+    outline: none;
+}

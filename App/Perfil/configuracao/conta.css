@@ -1,0 +1,8 @@
+.container_icon{
+    border-radius: 100%;
+    background-color: #E20338;
+    position: absolute;
+    right: -30px;
+    margin: auto;
+    top: 150px;
+}

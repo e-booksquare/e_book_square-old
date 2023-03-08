@@ -1,0 +1,400 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    color: black;
+}
+body{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    background-color: rgba(255, 255, 255, 0.548);
+}
+
+/*MAIN ----------------------------------------------------------------------------------------------------------------*/
+
+.fundo{
+    z-index: -1;
+    background-color: rgb(233, 233, 233);
+    width: 100%;
+    height: 400px;
+    border-bottom: 1px solid black;
+    position: relative;
+}
+.fundo img{
+    width: 100%;
+    height: 100%;
+    filter: brightness(.6); 
+}
+
+.icone{
+    display: flex;
+    align-items: center;
+    padding-top: 50px;
+    position: absolute;
+    bottom: -28%;
+    left: 70px;
+}
+.avatar{
+    background-color: white;
+    border-radius: 100%;
+    height: 250px;
+    width: 250px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.avatar img{
+    border-radius: 100%;
+    height: 250px;
+    width: 250px;
+    filter: brightness(1); 
+}
+
+.informacoes{
+    margin-left: 350px;
+    bottom: 20px;
+    display: flex;
+    /* flex-direction: row; */
+    position: absolute;
+    
+}
+.informacoes p {
+    padding-left: 20px;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.sobre_usuario{
+    display: flex;
+    justify-content: space-around;
+    width: 500px;
+    color: rgb(39, 39, 39);
+    font-size: 15pt;
+    font-weight: 600;
+    
+}
+
+.sobre_usuario p span{
+    color: rgb(197, 0, 33);
+    font-size: 15pt;
+}
+
+.opcoes{
+    display: flex;
+    justify-content: right;
+    margin-right: 70px;
+    align-items: center;
+    padding-top: 10px;
+}
+
+
+.container_dropdown{
+    width: auto;
+    border-radius: 5px;
+    box-shadow:0px 0px 5px rgba(0, 0, 0, 0.338);
+    background-color: white;
+    position: absolute;
+    display: none;
+    top: 50px; 
+    left: 0;
+    animation: dropdown_menu .4s 1 alternate ease-in-out forwards;
+}
+
+@keyframes dropdown_menu {
+    0%{
+    opacity: 0;
+  }
+
+  100%{
+    opacity: 1;
+  }
+}
+.container_dropdown:hover{
+    display: block;
+}
+
+.conteudo_perfil{
+    display: flex;
+    margin: 100px 10px 0 10px;
+    justify-content: center;
+}
+
+.botao_seguir{
+    cursor: pointer;
+    padding:  5px 10px;
+    font-size: 15pt;
+    color: white;
+    border-radius: 10px;
+    border: 2px solid red;
+    background-color: rgb(250, 58, 58);
+}
+.botao_seguir:hover{
+    background-color: red;
+}
+.Seguir span{
+    font-weight: 900;
+    color: white;
+    font-size: 17pt;
+}
+.titulo_descricao{
+    font-size: 20pt;
+    padding: 10px 10px 0px;
+}
+.descricao{
+    width: 400px;
+    height: auto;
+    min-height: 70px;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.638);
+    margin-top: 5px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#descricao{
+    padding: 10px;
+}
+
+.container-obras{
+    padding-left: 30px;
+    width: 65%;
+    height: auto;
+    margin-left: 50px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+.titulo_obras{
+    font-size: 20pt;
+}
+.obras{
+    padding-left: 5px;
+    background-color: gol;
+    height: auto;
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.container_editar_remover{
+    width: 70px;
+    height: 25px;
+    position:absolute;
+    right: 10px;
+    top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.editar img{
+    width: 25px;
+    height: 25px;
+}
+.remover img{
+    width: 25px;
+    height: 25px;
+}
+
+
+.foto_obras{
+    height: 100%;
+    min-width: 150px;
+    max-width: 150px;
+}
+.foto_obras img{
+    height: 260px;
+    width: 100%;
+}
+.categoria{
+    position: absolute;
+    display: flex;
+    bottom: 5px;
+    right: 5px;
+}
+
+.classe_categoria{
+    color: black;
+    font-size: 10pt;
+    padding: 5px;
+    margin: 0 2px;
+}
+
+.informacoes_Obras{
+    height: auto;
+}
+
+.informacoes_Obras ul {
+    list-style: none;
+    margin: 0px;
+}
+
+.informacoes_Obras li {
+    margin: 5px;
+    margin-top: 10px;
+}
+
+.Nome_Obra{
+    font-weight: 600;
+    font-size: 20px;
+}
+.Nome_Autor{
+    font-size: 15px;
+    font-style: italic;
+}
+.titulo-desc-obra{
+    font-weight:bolder;
+}
+
+.obras{
+    box-shadow:0px 0px 5px rgba(0, 0, 0, 0.338);
+
+}
+
+#div-desc{
+    border: 1px solid rgba(0, 0, 0, 0.232);
+    margin: 10px auto 0;
+    width: 80%;
+
+}
+
+.ver_mais_obras{
+    height: 50px;
+    background-color: transparent;
+    text-align: center;
+    text-decoration: underline;
+}
+
+
+/*INFORMAÇÃO DE CONTATO E DOAÇÕES */
+
+.titulo_contato{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.contato_doacoes{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 150px;
+}
+.contato_doacoes p{
+    padding-top: 15px;
+    padding-left: 5px;
+    background-color: #D9D9D9;
+    width: 150px;
+}
+.containers_contatos{
+    display: flex;
+    margin-top: 5px;
+}
+.containers_contatos img{
+    width: 47px;
+    height: 47px;
+    margin-right: 10px;
+}
+
+
+.Acao{
+    background-color: rgb(253, 22, 22);
+    color: white;
+}
+.Aventura{
+    background-color: orange;
+    color: white;
+}
+.Terror{
+    background-color: rgb(22, 14, 2);
+    color: white;
+}
+.Fantasia{
+    background-color: rgb(8, 206, 8);
+    color: white;
+}
+.Humor{
+    background-color: rgb(78, 10, 238);
+    color: white;
+}
+.Ficção{
+    background-color: rgb(107, 87, 87);
+    color: white;
+}
+.Romace{
+    background-color: rgb(238, 48, 111);
+    color: white;
+}
+.Conto{
+    background-color: purple;
+    color:white;
+}
+
+
+
+.ativo{
+    display: block;
+}
+.desativo{
+    display: none;
+}
+.tela_remover{
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    height: 150px;
+    width: 550px;
+    margin: auto;
+    top:0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 999;
+    box-shadow: 0px 0px 10px black;
+}
+
+.texto_remover{
+    margin-top: 10px;
+    text-align: center;
+    font-size: 15pt;
+    font-weight: 800;
+}
+.letras_miudas{
+    margin-top: 10px;
+    font-size: 12pt;
+    text-align: center;
+}
+.botoes_remover button{
+    padding: 10px;
+    font-size: 15pt;
+    border: none;
+}
+.botoes_remover button:hover{
+    filter: brightness(0.6);
+    cursor: pointer;
+}
+.botoes_remover{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.remover_botao{
+    background-color: #a10634;
+    color: white;
+}
+
+.cancelar_botao_remover{
+    color: #a10634;
+}
+
+.filtro{
+    filter: blur(10px);
+}
+
