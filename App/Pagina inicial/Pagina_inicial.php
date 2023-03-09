@@ -1,5 +1,5 @@
 <?php
-    include_once 'verificacao2.php'; 
+include_once 'verificacao2.php';
 ?>
 <!DOCTYPE html>
 <html lang="pt-BR">
@@ -57,50 +57,50 @@
                         </div>
                     </a>
                     <?php
-                        if(isset($_SESSION['ID_user'])):
-                    ?>
-                <div class="icone-user">
-                <label onclick="clique_perfil()" for="dropdown_perfil" id="nome" name="nome"><?=$dados_usuario['nome'];?> 
-                    <svg id="dropdown_perfil_girar" xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
-                    <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
-                    </svg></label></p>
-                    <div class="avatar-header">
-                    <a href="../Perfil\Perfil.php">
-                        <img src="
+                    if (isset($_SESSION['ID_user'])):
+                        ?>
+                        <div class="icone-user">
+                        <label onclick="clique_perfil()" for="dropdown_perfil" id="nome" name="nome"><?= $dados_usuario['nome']; ?> 
+                            <svg id="dropdown_perfil_girar" xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                            <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                            </svg></label></p>
+                            <div class="avatar-header">
+                            <a href="../Perfil\Perfil.php">
+                                <img src="
                         
-                        <?php if(isset($dados_usuario['foto']) && !empty($dados_usuario['foto'])){ ?>
-                            ../assets/IMAGEM_USUARIO/<?= $dados_usuario['foto'];?>
-                        <?php } else{?>
+                                <?php if (isset($dados_usuario['foto']) && !empty($dados_usuario['foto'])) { ?>
+                            ../assets/IMAGEM_USUARIO/<?= $dados_usuario['foto']; ?>
+                                <?php } else { ?>
                             ../assets/IMAGENS/blank.png
-                        <?php }?> 
+                                <?php } ?> 
                         
                         " alt="Foto de perfil" name="perfil" id="perfil-header">
-                    </a>
-                    </div>
-                    <input id="dropdown_perfil_input" class="checkbox_perfil" type="checkbox">
-                    <div class="nada" id="dropdown_perfil">
-                        <nav>
-                            <div>
-                                <a href="../perfil/perfil.php"><li class="opcoes_dropdown" style="font-weight: 600;">Meu perfil</li></a>
-                                <a href="#"><li class="opcoes_dropdown">Chat</li></a>
-                                <a href="#"><li class="opcoes_dropdown">Enviar menssagem</li></a>
-                                <a href="#"><li class="opcoes_dropdown">Denunciar perfil</li></a>
-                                <a href="../perfil/editar_perfil.php"><li class="opcoes_dropdown">Editar perfil</li></a>
-                                <a href="perfil.php?deslogar"><li class="opcoes_dropdown" style="color:red;">Sair</li></a>
+                            </a>
                             </div>
-                        </nav>
-                     </div>
-                     <?php
-                        else:
-                     ?>
-                        <p>
-                        <a href="../login/login.php">
-                            Fazer Login
-                        </a>
-                        </p>
-                     <?php
-                        endif;
-                     ?>
+                            <input id="dropdown_perfil_input" class="checkbox_perfil" type="checkbox">
+                            <div class="nada" id="dropdown_perfil">
+                                <nav>
+                                    <div>
+                                        <a href="../perfil/perfil.php"><li class="opcoes_dropdown" style="font-weight: 600;">Meu perfil</li></a>
+                                        <a href="#"><li class="opcoes_dropdown">Chat</li></a>
+                                        <a href="#"><li class="opcoes_dropdown">Enviar menssagem</li></a>
+                                        <a href="#"><li class="opcoes_dropdown">Denunciar perfil</li></a>
+                                        <a href="../perfil/editar_perfil.php"><li class="opcoes_dropdown">Editar perfil</li></a>
+                                        <a href="perfil.php?deslogar"><li class="opcoes_dropdown" style="color:red;">Sair</li></a>
+                                    </div>
+                                </nav>
+                             </div>
+                             <?php
+                    else:
+                        ?>
+                                <p>
+                                <a href="../login/login.php">
+                                    Fazer Login
+                                </a>
+                                </p>
+                             <?php
+                    endif;
+                    ?>
                 </li>
                 
             </ul>
@@ -113,7 +113,7 @@
     <div class="imagem">
         <img src="https://classic.exame.com/wp-content/uploads/2020/11/livros-2.jpg?quality=70&strip=info&w=1024" alt="" srcset="">
     </div>
-    <h2>Bem vindo <label onclick="clique_perfil()" for="dropdown_perfil" id="nome" name="nome"><?=$dados_usuario['nome'];?> </label></h2>
+    <h2>Bem vindo <label onclick="clique_perfil()" for="dropdown_perfil" id="nome" name="nome"><?= $dados_usuario['nome']; ?> </label></h2>
 </div>
 
 
@@ -675,14 +675,14 @@
        </div>
        <div class="footer_segunda_parte">
            <ul>
-               <a href="#"><li class="formatacao link_footer">Ajuda/FAQ</li></a>
-               <a href="#"><li class="formatacao link_footer">Sobres nós</li></a>
+               <a href="../FAQ/FAQ.php"><li class="formatacao link_footer">Ajuda/FAQ</li></a>
+               <a href="../../Sobre_Nos.php"><li class="formatacao link_footer">Sobres nós</li></a>
                <a href="../../contato.php"><li class="formatacao link_footer">Suporte</li></a>
            </ul>
        </div>
        <div class="footer_terceira_parte">
            <ul>
-               <a href="#"><li class="formatacao link_footer">Ler histórias</li>
+               <a href="../Pagina inicial/pagina_inicial.php"><li class="formatacao link_footer">Ler histórias</li>
                <a href="#"><li class="formatacao link_footer">Diretrizes da comunidade</li></a>
            </ul>
        </div>

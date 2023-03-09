@@ -1,5 +1,5 @@
 <?php
-    include_once 'verificacao2.php'; 
+    include_once 'verificacao2.php';
     
     $Obra_Usuario_Count = $classLog->Obra_Usuario_Count($_SESSION['ID_user']);
 ?>
@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="../../header e footer/header.css">
     <link rel="stylesheet" href="../../header e footer/footer.css">
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
-    <title><?=$dados_usuario['codigo'];?> | E-Book Square- </title>
+    <title><?=$dados_usuario['codigo'];?> | E-Book Square </title>
 </head>
 
 <body id="topo">
@@ -274,14 +274,14 @@
                                     </div>
                                 </div>
                                 <div class="categoria">
-                                    <!-- <div class="Acao classe_categoria">Ação</div>
+                                    <div class="Acao classe_categoria">Ação</div>
                                     <div class="Aventura classe_categoria">Aventura</div>
                                     <div class="Terror classe_categoria">Terror</div>
                                     <div class="Fantasia classe_categoria">Fantasia</div>
                                     <div class="Humor classe_categoria">Humor</div>
                                     <div class="Ficção classe_categoria">Ficção</div>
                                     <div class="Romace classe_categoria">Romace</div>
-                                    <div class="Conto classe_categoria">Conto</div> -->
+                                    <div class="Conto classe_categoria">Conto</div>
                                 </div>
                                 <a href="#">
                                 <div class="foto_obras">
@@ -291,19 +291,19 @@
                                     <div class="informacoes_Obras" style="margin-left: 10px; padding: 10px;">
                                         <ul>
                                             <li class="Nome_Obra" id="Nome_Obra" name="Nome_Obra">
-                                                <p><?= $Obra_Usuario['nome_obra'] ;?></p>
+                                                Terror
                                             </li> </a>
                                             <li class="Nome_Autor" id="Nome_Autor" name="Nome_Autor">
-                                                <p id="nome" name="nome"><?= $Obra_Usuario['nome'];?></p>
+                                                <p id="nome" name="nome"><?=$dados_usuario['nome'];?></p>
                                             </li>
                                             <li class="Descri_Obra" id="Descri_Obra" name="Descri_Obra">
                                             <p class="titulo-desc-obra">Descrição:</p>
-                                                <p><?= $Obra_Usuario['descricao'] ;?></p>
+                                                <p>   As pessoas acham que ele não passa de uma lenda, apenas uma creepypasta assustadora, mas que não é real. Bem, eu tenho algo a dizer sobre isso, ele é real sim, e sei disso porque eu mesma o vi quando eu tinha seis anos, eu mesma presenciei o terror que ele capaz de causar e eu mesma vou matá-lo... Pelo menos era isso que eu queria antes de ser sequestrada por ele e a história seguir um rumo completamente diferente do que eu havia imaginado.</p>
                                             </li>
 
                                             <li>
                                                 <p style="font-weight: 600;">Avaliações:</p>
-                                                <p><span style="color: goldenrod;">--%</span> positivas</p>
+                                                <p><span style="color: goldenrod;">76%</span> positivas</p>
                                             </li>
                                         </ul>
                                     </div>
@@ -316,7 +316,7 @@
                     
                     <!-- Só ira aparecer caso tenha mais de 3 obras  -->
                    <div class="ver_mais_obras">
-                        <a href="#">Ver mais</a>
+                        <a href="Ver_mais_obras.php">Ver mais</a>
                     </div>
                 </div>
 
@@ -328,39 +328,39 @@
             <div class="contato_doacoes">
                 <div class="container_tel containers_contatos">
                     <img src="ESTILO\Imagens\logo_whatsapp.png" alt="">
-                    <p class="Numero_contato">18 997476957<p>
+                    <p class="Numero_contato"><?=$dados_usuario['tel_contato_what'];?><p>
                 </div>
                 <div class="container_discord containers_contatos">
                     <img src="ESTILO\Imagens\logo_discord.png" alt="">
-                    <p class="Discord_contato">@macoasas<p>
+                    <p class="Discord_contato"><?=$dados_usuario['discord'];?><span> #<?=$dados_usuario['codigo_discord'];?></span><p>
                 </div>
                 <div class="container_face containers_contatos">
                     <img src="ESTILO\Imagens\logo_face.png" alt="">
-                    <p class="Face_contato">Maicon Junior<p>
+                    <p class="Face_contato"><?=$dados_usuario['facebook'];?><p>
                 </div>
                 <div class="container_pix containers_contatos">
                     <img src="ESTILO\Imagens\logo_pix.png" alt="">
-                    <p class="Pix_contato">+5518997476957<p>
+                    <p class="Pix_contato"><?=$dados_usuario['pix'];?><p>
                 </div>
 
             </div>
         </form>
     </main>
     <footer id="footer" class="">
-    <div class="footer_primera_parte">
+        <div class="footer_primera_parte">
            <img src="estilo/imagens/logo_footer.png" alt="logo do site">
            <p class="formatacao">© 2022 E-book Square. </p>
        </div>
        <div class="footer_segunda_parte">
            <ul>
-               <a href="#"><li class="formatacao link_footer">Ajuda/FAQ</li></a>
-               <a href="#"><li class="formatacao link_footer">Sobres nós</li></a>
+               <a href="../FAQ/FAQ.php"><li class="formatacao link_footer">Ajuda/FAQ</li></a>
+               <a href="../../Sobre_Nos.php"><li class="formatacao link_footer">Sobres nós</li></a>
                <a href="../../contato.php"><li class="formatacao link_footer">Suporte</li></a>
            </ul>
        </div>
        <div class="footer_terceira_parte">
            <ul>
-               <a href="#"><li class="formatacao link_footer">Ler histórias</li>
+               <a href="../Pagina inicial/pagina_inicial.php"><li class="formatacao link_footer">Ler histórias</li>
                <a href="#"><li class="formatacao link_footer">Diretrizes da comunidade</li></a>
            </ul>
        </div>

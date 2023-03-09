@@ -1,0 +1,44 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+
+}
+
+body{
+    overflow-x: hidden;
+}
+main{
+    margin-top: 50px;
+    margin: 50px;
+}
+
+.Pergu_FAQ{
+    margin-bottom: 15px;
+}
+
+.container_FAQ{
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 50px 0px 50px 50px;
+    line-height: 30px;
+}
+.container_FAQ a{
+    cursor: pointer;
+    color: #0000FF;
+}
+
+.container_FAQ a:hover{
+    text-decoration: underline;
+}
+
+.text_final_pag{
+    margin-top: 15px;
+}
+
+.link_contatos{
+    text-decoration: underline;
+    cursor: pointer;
+    color: #0000FF;
+}

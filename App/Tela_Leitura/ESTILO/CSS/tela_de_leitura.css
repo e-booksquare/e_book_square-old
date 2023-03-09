@@ -1,0 +1,143 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: black;
+}
+
+body{
+    overflow-x: hidden;
+    background-color: rgb(240, 240, 240);
+}
+
+main{
+    margin: 50px;
+}
+.titulo_capitulos{
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    justify-content: center;
+}
+
+.titulo{
+    font-size: 12pt;
+    font-weight: 100;
+}
+.autor{
+    align-items: center;
+    display: flex;
+    gap: 50px
+}
+
+.opcoes_leitura{
+    margin: 0;
+    padding: 5px;
+    align-items: center;
+    gap: 10px;
+    display: flex;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.selecionar_capitulo{
+    padding: 10px;
+    width: 200px;
+}
+
+.Capitulo{
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.imagem_historia{
+    height: 300px;
+    width: 210px;
+    margin-bottom: 20px;
+}
+
+.imagem{
+    display: flex;
+    justify-content: center;
+}
+
+.leitura{
+    text-align: justify;
+    padding: 55px;
+}
+.comentarios{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.data_denunciar{
+    display: flex;
+    justify-content:space-between;
+}
+
+.icon_nome{
+    gap: 10px;
+    display: flex;
+}
+
+.comentario_texto{
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+.pular_cap_Mais_historias{
+    display: flex;
+    justify-content: center;
+}
+
+.pular{
+    height: 50px;
+    padding: 0 15px;
+    justify-content: center;
+    margin: 30px 0;
+    display: flex;
+    text-align: center;
+    gap: 100px;
+    border: 1px solid black;
+}
+
+.cap{
+    gap: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.linha{
+    background-color: black;
+    height: auto;
+    width: 1px;
+}
+.container_comentario{
+    background-color: #E0E0E0;
+    padding: 10px;
+    width: 100%;
+    box-shadow: 0 0 8px rgb(139, 139, 139);
+}
+.comentario_texto textarea{
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    resize: none;
+    font-size: 12pt;
+}
+.comentario_texto button{
+    float: right;
+    height: 35px;
+    padding: 0 10px;
+    font-size: 13pt;
+    background-color: orange;
+    cursor: pointer;
+}
+.comentario_texto button:hover{
+    filter: brightness(0.6);
+}

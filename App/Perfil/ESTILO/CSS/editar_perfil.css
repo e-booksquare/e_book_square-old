@@ -120,18 +120,7 @@ form{
     margin-bottom: 20px;
 }
 
-.contato_doacoes{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
 
-}
-.contato_doacoes p{
-    padding-top: 15px;
-    padding-left: 5px;
-    background-color: #D9D9D9;
-    width: 150px;
-}
 .containers_contatos{
     display: flex;
     margin-top: 5px;
@@ -193,4 +182,26 @@ form{
 
 .limit_text{
     color: #ff2851 ;
+}
+
+.input_doacoes{
+
+    padding-left: 10px;
+    padding-right: 25px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid black;
+}
+.codigo_discord::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+    
+}
+.codigo_discord{ 
+    border: none;
+    outline: none;
+    border-bottom: 1px solid black;
+   -moz-appearance: textfield;
+   appearance: textfield;
+    width: 60px;
+    padding: 10px;
 }

@@ -25,6 +25,11 @@ if(isset($_POST['atualizar']) && isset($_SESSION['ID_user']))
     $nome = filter_var($_POST['nome'], FILTER_SANITIZE_FULL_SPECIAL_CHARS);
     $codigo = filter_var($_POST['codigo'], FILTER_SANITIZE_FULL_SPECIAL_CHARS);
     $descricao = filter_var($_POST['descricao'], FILTER_SANITIZE_FULL_SPECIAL_CHARS);
+    $tel_contato_what = filter_var($_POST['tel_contato_what'], FILTER_SANITIZE_FULL_SPECIAL_CHARS);
+    $pix = filter_var($_POST['pix'], FILTER_SANITIZE_FULL_SPECIAL_CHARS);
+    $facebook = filter_var($_POST['facebook'], FILTER_SANITIZE_FULL_SPECIAL_CHARS);
+    $codigo_discord = filter_var($_POST['codigo_discord'], FILTER_SANITIZE_FULL_SPECIAL_CHARS);
+    $discord = filter_var($_POST['discord'], FILTER_SANITIZE_FULL_SPECIAL_CHARS);
     
     $padrao = "/^@[a-z0-9\-\_\&]{3,22}$/";
     
@@ -131,7 +136,7 @@ if(isset($_POST['atualizar']) && isset($_SESSION['ID_user']))
 
 
 
-    $SQL = "UPDATE usuario SET nome = :nome, codigo = :cod, foto = :f, banner = :bnr, descricao = :descricao WHERE ID_user = :id";
+    $SQL = "UPDATE usuario SET nome = :nome, tel_contato_what = :tel_contato_what, codigo_discord = :codigo_discord, facebook = :facebook, discord = :discord, pix = :pix, codigo = :cod, foto = :f, banner = :bnr, descricao = :descricao WHERE ID_user = :id";
     $conn = $pdo->prepare($SQL);
     $conn->bindValue(":id", $id);
     $conn->bindValue(":nome", $nome);
@@ -139,6 +144,11 @@ if(isset($_POST['atualizar']) && isset($_SESSION['ID_user']))
     $conn->bindValue(":f", $foto);
     $conn->bindValue(":bnr", $banner);
     $conn->bindValue(":descricao", $descricao);
+    $conn->bindValue(":tel_contato_what", $tel_contato_what);
+    $conn->bindValue(":codigo_discord", $codigo_discord);
+    $conn->bindValue(":facebook", $facebook);
+    $conn->bindValue(":discord", $discord);
+    $conn->bindValue(":pix", $pix);
     $conn->execute();
 
     header("location: ../Perfil.php");

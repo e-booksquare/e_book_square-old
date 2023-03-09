@@ -16,10 +16,10 @@
     <title>Configuração | E-BOOK SQUARE</title>
 </head>
 <body>
-    <header>
+<header>
         <div class="container-header">
         <div class="img-logo-header">
-                    <a href="..\Pagina Inicial\pagina_inicial.php"><img src="../../../app/assets/IMAGENS/logo.jpg" alt="" class="logo-header"></a>
+                    <a href="../..\Pagina Inicial\pagina_inicial.php"><img src="../../../app/assets/IMAGENS/logo.jpg" alt="" class="logo-header"></a>
                 </div>
                 <ul>
                     <li style="display: flex; align-items: center; gap: 30px; margin-left:20px ;">
@@ -53,7 +53,7 @@
                         <input class="pesquisa" type="search" placeholder="Pesquise livros e artista aqui">
                     </li>
                     <li class="block-right">
-                        <a href="../Fazer_Obra/Fazer_obra.php">
+                        <a href="../../Fazer_Obra/Fazer_obra.php">
                             <div class="type-new-history">
                                 Escrever
                             </div>
@@ -67,7 +67,7 @@
                         <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
                         </svg></label></p>
                         <div class="avatar-header">
-                        <a href="Perfil.php">
+                        <a href="../Perfil.php">
                             <img src="
                             
                             <?php if(isset($dados_usuario['foto']) && !empty($dados_usuario['foto'])){ ?>
@@ -86,8 +86,8 @@
                                     <a  href="#"><li class="opcoes_dropdown">Chat</li></a>
                                     <a href="#"><li class="opcoes_dropdown">Enviar menssagem</li></a>
                                     <a href="#"><li class="opcoes_dropdown">Denunciar perfil</li></a>
-                                    <a href="editar_perfil.php"><li class="opcoes_dropdown">Editar perfil</li></a>
-                                    <a href="perfil.php?deslogar"><li class="opcoes_dropdown">Sair</li></a>
+                                    <a href="../editar_perfil.php"><li class="opcoes_dropdown">Editar perfil</li></a>
+                                    <a href="../perfil.php?deslogar"><li class="opcoes_dropdown">Sair</li></a>
                                 </div>
                             </nav>
                          </div>
@@ -149,19 +149,18 @@
                    <p class="formatacao">© 2022 E-book Square. </p>
                </div>
                <div class="footer_segunda_parte">
-                   <ul>
-                       <a href="#"><li class="formatacao link_footer">Ajuda/FAQ</li></a>
-                       <a href="#"><li class="formatacao link_footer">Sobres nós</li></a>
-                       <a href="#"><li class="formatacao link_footer">Segurança</li></a>
-                       <a href="#"><li class="formatacao link_footer">Suporte</li></a>
-                   </ul>
-               </div>
-               <div class="footer_terceira_parte">
-                   <ul>
-                       <a href="#"><li class="formatacao link_footer">Ler histórias</li>
-                       <a href="#"><li class="formatacao link_footer">Diretrizes da comunidade</li></a>
-                   </ul>
-               </div>
+                <ul>
+                    <a href="../../FAQ/FAQ.php"><li class="formatacao link_footer">Ajuda/FAQ</li></a>
+                    <a href="../../../Sobre_Nos.php"><li class="formatacao link_footer">Sobres nós</li></a>
+                    <a href="../../../contato.php"><li class="formatacao link_footer">Suporte</li></a>
+                </ul>
+                </div>
+                <div class="footer_terceira_parte">
+                    <ul>
+                        <a href="../../Pagina inicial/pagina_inicial.php"><li class="formatacao link_footer">Ler histórias</li>
+                        <a href="#"><li class="formatacao link_footer">Diretrizes da comunidade</li></a>
+                    </ul>
+                </div>
                <div class="footer_quarta_parte">
                    <ul>
                        <li class="formatacao">É uma plataforma para autopublicação de Livros. Solte sua imaginação, escreva suas histórias, tenha sua própria página personalizada, compartilhe idéias, faça amizades</li>

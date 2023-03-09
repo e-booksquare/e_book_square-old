@@ -1,70 +1,78 @@
 @import url('https://fonts.googleapis.com/css2?family=Bona+Nova&display=swap');
-*{
+
+* {
   font-family: 'Bona Nova', serif;
 }
+
 body::-webkit-scrollbar {
-  width: 10px;               /* width of the entire scrollbar */
+  width: 10px;
+  /* width of the entire scrollbar */
 }
 
 body::-webkit-scrollbar-track {
-  background: none;        /* color of the tracking area */
+  background: none;
+  /* color of the tracking area */
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: rgb(128, 128, 128);    /* color of the scroll thumb */
-  border-radius: 20px;       /* roundness of the scroll thumb */
+  background-color: rgb(128, 128, 128);
+  /* color of the scroll thumb */
+  border-radius: 20px;
+  /* roundness of the scroll thumb */
 }
 
-header{
+header {
   z-index: 5;
   max-height: 60px;
   background-color: rgb(255, 255, 255);
   box-shadow: 0px 0px 2px 2px #1f1e1e27;
 }
 
-.container-header{
+.container-header {
   height: 60px;
   display: flex;
-  justify-content:space-around;
+  justify-content: space-around;
 }
 
-.logo-header{
+.logo-header {
   width: 70px;
 }
 
-.checkbox_explorar{
+.checkbox_explorar {
   display: none;
 }
-.explorar{
+
+.explorar {
   position: relative;
 }
-.dropdown_explorar{
+
+.dropdown_explorar {
   z-index: 10;
   position: absolute;
   left: 0;
   top: 30px;
   background-color: #ffffff;
   border-radius: 8px;
-  box-shadow:0px 0px 5px rgba(0, 0, 0, 0.338);
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.338);
   animation: dropdown_explorar .4s 1 alternate ease-in-out forwards;
 }
 
 @keyframes dropdown_explorar {
-  0%{
-  opacity: 0;
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
-100%{
-  opacity: 1;
-}
-}
 
-
-.dropdown_explorar nav{
+.dropdown_explorar nav {
   display: flex;
 }
 
-.icone-user{
+.icone-user {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -73,13 +81,15 @@ header{
 }
 
 
-#nome{
+#nome {
   position: relative;
 }
-.nada{
+
+.nada {
   display: none;
 }
-.dropdown_perfil{
+
+.dropdown_perfil {
   z-index: 10;
   position: absolute;
   right: 0;
@@ -87,28 +97,32 @@ header{
   width: 300px;
   background-color: #ffffff;
   border-radius: 8px;
-  box-shadow:0px 0px 5px rgba(0, 0, 0, 0.338);
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.338);
   animation: dropdown_perfil .4s 1 alternate ease-in-out forwards;
 }
+
 @keyframes dropdown_perfil {
-  0%{
-  opacity: 0;
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
-100%{
-  opacity: 1;
-}
-}
-
-.checkbox_perfil{
+.checkbox_perfil {
   display: none;
 }
 
-.block-right{
-  display: flex; align-items: center; gap: 30px; margin-left:-20px ;
+.block-right {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-left: -20px;
 }
 
-.avatar-header{
+.avatar-header {
   border-radius: 100%;
   height: 45px;
   width: 45px;
@@ -117,18 +131,20 @@ header{
   align-items: center;
   justify-content: center;
 }
-.avatar-header img{
+
+.avatar-header img {
   border-radius: 100%;
   margin-top: 5px;
   height: 45px;
   width: 45px;
-  filter: brightness(1); 
+  filter: brightness(1);
 }
 
-.img-logo-header{
-  margin-left:30px ;
+.img-logo-header {
+  margin-left: 30px;
 }
-.type-new-history{
+
+.type-new-history {
   width: 100px;
   height: 35px;
   display: flex;
@@ -139,15 +155,17 @@ header{
   border-radius: 8px;
   cursor: pointer;
 }
-.type-new-history:hover{
+
+.type-new-history:hover {
   background-color: #a10634;
 }
 
-.container-header ul li{
+.container-header ul li {
   color: black;
   list-style: none;
 }
-.container-header ul{
+
+.container-header ul {
   height: 100%;
   width: 100vw;
   display: flex;
@@ -155,7 +173,8 @@ header{
   justify-content: space-evenly;
   align-items: center;
 }
-.pesquisa{
+
+.pesquisa {
   border: 1px solid black;
   padding: 5px;
   padding-left: 10px;
@@ -163,24 +182,26 @@ header{
   height: 30px;
   border-radius: 10px;
 }
-.pesquisa:focus{
+
+.pesquisa:focus {
   outline: none;
 }
 
-.opcoes_dropdown{
+.opcoes_dropdown {
   text-align: center;
   padding: 10px 15px;
   list-style: none;
 }
 
-.opcoes_dropdown:hover{
+.opcoes_dropdown:hover {
   background-color: rgb(236, 236, 236);
   cursor: pointer;
-} 
+}
 
-.girar_dropdown{
+.girar_dropdown {
   transform: rotate(180deg);
 }
-svg{
+
+svg {
   transition: 0.5s;
 }
